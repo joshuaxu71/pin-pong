@@ -6,6 +6,9 @@ public class CollisionPaddle : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Paddle"))
         {
+            // Reset paddle's velocity so that ball's velocity does not get transferred to the paddle.
+            collision.rigidbody.velocity = Vector2.zero;
+
             float centerOfContactY = Vector2.zero.y;
 
             for (int i = 0; i < collision.contactCount; i++) 
