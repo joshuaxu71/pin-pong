@@ -18,6 +18,11 @@ public class MainMenuNavigation : MonoBehaviour
         SceneManager.LoadScene("Scenes/Keybinds");
     }
 
+    public void Settings()
+    {
+        SceneManager.LoadScene("Scenes/Settings");
+    }
+
     public void Exit()
     {
         Application.Quit();
