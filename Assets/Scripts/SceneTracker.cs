@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SceneTracker : MonoBehaviour
 {
@@ -9,13 +8,6 @@ public class SceneTracker : MonoBehaviour
 
     void Awake()
     {
-        try
-        {
-            Debug.Log(instance.gameObject.name);
-            Debug.Log(instance.prevScene);
-            Debug.Log(!instance);
-
-        } catch { }
         if (!instance)
             instance = this;
         else
