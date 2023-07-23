@@ -1030,6 +1030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 721421440}
   - component: {fileID: 721421441}
+  - component: {fileID: 721421442}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1068,6 +1069,18 @@ MonoBehaviour:
   baseForceY: 75
   arena: {fileID: 2041623773}
   ball: {fileID: 324279502}
+--- !u!114 &721421442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721421439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7396801f49aa58f4da8ca65a69c269de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &730947758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,7 +1401,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1134497058}
   - component: {fileID: 1134497061}
-  - component: {fileID: 1134497060}
   - component: {fileID: 1134497059}
   m_Layer: 0
   m_Name: Bottom
@@ -1434,27 +1446,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!50 &1134497060
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134497057}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &1134497061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1899,7 +1890,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565263104}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1997,7 +1988,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1942101963}
   - component: {fileID: 1942101967}
-  - component: {fileID: 1942101966}
   - component: {fileID: 1942101964}
   m_Layer: 0
   m_Name: Top
@@ -2043,27 +2033,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!50 &1942101966
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942101962}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &1942101967
 SpriteRenderer:
   m_ObjectHideFlags: 0
