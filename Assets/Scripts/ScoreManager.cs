@@ -7,7 +7,6 @@ public class ScoreManager : MonoBehaviour
     public static string winner;
 
     public bool againstAI;
-    public int scoreToWin = 2;
     public TMP_Text scoreLeft;
     public TMP_Text scoreRight;
 
@@ -16,7 +15,7 @@ public class ScoreManager : MonoBehaviour
         if (goalName.Equals("Left"))
         {
             scoreRight.text = (int.Parse(scoreRight.text) + 1).ToString();
-            if (scoreRight.text.Equals(scoreToWin.ToString()))
+            if (scoreRight.text.Equals(Initializer.settings.scoreToWin.ToString()))
             {
                 winner = "Player 1";
             }
@@ -24,7 +23,7 @@ public class ScoreManager : MonoBehaviour
         else
         {
             scoreLeft.text = (int.Parse(scoreLeft.text) + 1).ToString();
-            if (scoreLeft.text.Equals(scoreToWin.ToString()))
+            if (scoreLeft.text.Equals(Initializer.settings.scoreToWin.ToString()))
             {
                 if (againstAI)
                 {
@@ -38,7 +37,7 @@ public class ScoreManager : MonoBehaviour
 
         }
 
-        if (scoreRight.text.Equals(scoreToWin.ToString()) || scoreLeft.text.Equals(scoreToWin.ToString()))
+        if (scoreRight.text.Equals(Initializer.settings.scoreToWin.ToString()) || scoreLeft.text.Equals(Initializer.settings.scoreToWin.ToString()))
         {
             SceneTracker.instance.prevScene = SceneManager.GetActiveScene().buildIndex;
             GameNavigation.LoadEndScreenScene();
