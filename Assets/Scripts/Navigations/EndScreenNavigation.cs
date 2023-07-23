@@ -10,6 +10,7 @@ public class EndScreenNavigation : MonoBehaviour
 
 	public void MainMenu()
 	{
+        SceneTracker.instance.prevScene = SceneManager.GetActiveScene().buildIndex;
 		SceneManager.LoadScene("Scenes/MainMenu");
 	}
 

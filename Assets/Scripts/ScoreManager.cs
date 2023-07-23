@@ -39,7 +39,6 @@ public class ScoreManager : MonoBehaviour
 
         if (scoreRight.text.Equals(Initializer.settings.scoreToWin.ToString()) || scoreLeft.text.Equals(Initializer.settings.scoreToWin.ToString()))
         {
-            SceneTracker.instance.prevScene = SceneManager.GetActiveScene().buildIndex;
             GameNavigation.LoadEndScreenScene();
         }
 
